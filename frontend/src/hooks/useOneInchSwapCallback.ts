@@ -167,7 +167,7 @@ function useSwapCallArguments(
     const swapMethods = []
     // console.log('allowedSlippage ======', allowedSlippage)
     swapMethods.push(
-      swapCallParameters(oneslpit , deadline, fromToken, destToken, input, output, distribution, {
+      swapCallParameters(oneSlpit , deadline, fromToken, destToken, input, output, distribution, {
         feeOnTransfer: false,
         allowedSlippage: new Percent(JSBI.BigInt(allowedSlippage), BIPS_BASE),
         recipient,
