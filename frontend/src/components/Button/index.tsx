@@ -128,7 +128,7 @@ export const ButtonPink = styled(Base)`
 export const ButtonOutlined = styled(Base)`
   border: 1px solid ${({ theme }) => theme.bg2};
   background-color: transparent;
-  color: ${({ theme }) => theme.textl};
+  color: ${({ theme }) => theme.text1};
   &:disabled {
     opacity: 50%;
     cursor: auto;
