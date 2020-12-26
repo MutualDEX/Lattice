@@ -19,7 +19,6 @@ import invariant from 'tiny-invariant'
 import { getAddress } from '@ethersproject/address'
 // import warning from 'tiny-warning'
 import { Field } from '../state/swap/actions'
-import { useOneSplitContract } from '../hooks/useAgregator'
 import { useToken } from '../hooks/Tokens'
 import { tryParseSwapAmount } from '../state/swap/hooks'
 import isZero from '../utils/isZero'
@@ -167,7 +166,7 @@ function useSwapCallArguments(
     const swapMethods = []
     // console.log('allowedSlippage ======', allowedSlippage)
     swapMethods.push(
-      swapCallParameters(oneSplit , deadline, fromToken, destToken, input, output, distribution, {
+      swapCallParameters(fromToken, destToken, input, output, distribution, {
         feeOnTransfer: false,
         allowedSlippage: new Percent(JSBI.BigInt(allowedSlippage), BIPS_BASE),
         recipient,
