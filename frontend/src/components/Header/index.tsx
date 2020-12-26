@@ -24,7 +24,6 @@ import Row, { RowFixed } from '../Row'
 import Web3Status from '../Web3Status'
 import { Dots } from '../swap/styleds'
 import Modal from '../Modal'
-import UniBalanceContent from './UniBalanceContent'
 import usePrevious from '../../hooks/usePrevious'
 
 const HeaderFrame = styled.div`
