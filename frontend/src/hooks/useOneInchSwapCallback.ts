@@ -193,11 +193,13 @@ function useSwapCallArguments(
     deadline,
     library,
     recipient,
+    oneSplit,
     fromToken,
     destToken,
     input,
     output,
-    distribution
+    distribution,
+    flag
   ])
 }
 
@@ -374,10 +376,7 @@ export function useSwapCallback(
     output,
     input,
     fromToken,
-    inputCurrencyId,
-    outputCurrencyId,
-    destToken,
-    distribution
+    destToken
   ])
 }
 
