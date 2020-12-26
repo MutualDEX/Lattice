@@ -267,10 +267,6 @@ export default function Header() {
 
   return (
     <HeaderFrame>
-      <ClaimModal />
-      <Modal isOpen={showUniBalanceModal} onDismiss={() => setShowUniBalanceModal(false)}>
-        <UniBalanceContent setShowUniBalanceModal={setShowUniBalanceModal} />
-      </Modal>
       <HeaderRow>
         <Title href=".">
           <UniIcon>
@@ -297,9 +293,9 @@ export default function Header() {
           <StyledNavLink id={`stake-nav-link`} to={'/uni'}>
             Stake
           </StyledNavLink>
-           <StyledNavAggreLink id={`aggregation-nav-link`} to={'/poly'}>
+           <StyledNavLink id={`aggregation-nav-link`} to={'/poly'}>
             {t('aggregation')}
-          </StyledNavAggreLink>
+          </StyledNavLink>
           <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
             Vote
           </StyledNavLink>
