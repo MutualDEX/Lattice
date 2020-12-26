@@ -1,5 +1,6 @@
 // import { BigNumber } from '@ethersproject/bignumber'
 import { Contract } from '@ethersproject/contracts'
+import { useMemo } from 'react'
 import { JSBI, Percent, CurrencyAmount, Token } from 'lattswap'
 import { BIPS_BASE, INITIAL_ALLOWED_SLIPPAGE, ETH_ADDRESS } from '../constants'
 // import { getTradeVersion, useV1TradeExchangeAddress } from '../data/V1'
