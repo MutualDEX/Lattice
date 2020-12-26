@@ -12,9 +12,7 @@ import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances, useAggregateUniBalance } from '../../state/wallet/hooks'
 import { CardNoise } from '../earn/styled'
-import { CountUp } from 'use-count-up'
 import { TYPE, ExternalLink } from '../../theme'
-
 import { YellowCard } from '../Card'
 import Settings from '../Settings'
 import Menu from '../Menu'
@@ -22,7 +20,6 @@ import Menu from '../Menu'
 import Row, { RowFixed } from '../Row'
 import Web3Status from '../Web3Status'
 import { Dots } from '../swap/styleds'
-import Modal from '../Modal'
 import usePrevious from '../../hooks/usePrevious'
 
 const HeaderFrame = styled.div`
