@@ -71,3 +71,4 @@ declare module 'styled-components' {
     flexColumnNoWrap: FlattenSimpleInterpolation
     flexRowNoWrap: FlattenSimpleInterpolation
   }
+}
