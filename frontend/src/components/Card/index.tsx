@@ -15,16 +15,16 @@ const Card = styled(Box)<{ padding?: string; border?: string; borderRadius?: str
 export default Card
 
 export const LightCard = styled(Card)`
-  border: 1px solid ${({ theme }) => theme.Bg1};
-  background-color: ${({ theme }) => lighten(0.1, theme.Bg2)};
+  border: 1px solid ${({ theme }) => theme.bg1};
+  background-color: ${({ theme }) => lighten(0.1, theme.bg2)};
 `
 
 export const GreyCard = styled(Card)`
-  background-color: ${({ theme }) => theme.Bg3};
+  background-color: ${({ theme }) => theme.bg3};
 `
 
 export const OutlineCard = styled(Card)`
-  border: 1px solid ${({ theme }) => theme.Bg3};
+  border: 1px solid ${({ theme }) => theme.bg3};
 `
 
 export const YellowCard = styled(Card)`
@@ -40,7 +40,7 @@ export const PinkCard = styled(Card)`
 `
 
 const BlueCardStyled = styled(Card)`
-  background-color: ${({ theme }) => theme.modalCBG};
+  background-color: ${({ theme }) => theme.primary5};
   color: ${({ theme }) => theme.primary1};
   border-radius: 12px;
   width: fit-content;
